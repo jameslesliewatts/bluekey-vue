@@ -1,13 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Header />
+    <!-- <router-link to="/">Home</router-link>|
+    <router-link to="/about">About</router-link>-->
+    <router-view />
+    <Contact />
   </div>
 </template>
+<script>
+import Header from "./components/includes/Header.vue";
+import Contact from "./components/includes/Contact.vue";
 
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    Header,
+    Contact
+  }
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
