@@ -1,0 +1,13 @@
+{
+  "extends": ["airbnb-base", "prettier", "plugin:vue/recommended"],
+  "plugins": ["vue"],
+  "env": {
+      "browser": true
+  },
+  "rules": {
+    "vue/html-closing-bracket-newline": ["warn", {
+      "singleline": "never",
+      "multiline": "never"
+    }]
+  }
+}
