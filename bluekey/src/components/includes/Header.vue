@@ -19,10 +19,13 @@
           <router-link :to="{ name: 'Furnished' }">Furnished</router-link>
         </li>
         <li>
-          <a href="#">Login</a>
+          <a href="https://jessicawatts.managebuilding.com/Resident/portal/login" target="_blank">Login</a>
         </li>
       </ul>
     </nav>
+    <div class="logo-container">
+      <img src="@/assets/images/aspire-logo.png" alt="logo" id="logo" width="200"/>
+    </div> 
   </div>
 </template>
 
@@ -30,7 +33,15 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss">
+.logo-container {
+  height: 100%;
+  text-align: center;
+
+  #logo {
+    vertical-align: middle;
+  }
+}
 @media screen and (max-width: 44em) {
   $menu_width: 20em;
   $content_offset: 0.5em;
